@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 import static com.knoldus.learning.design.salary.util.CurrencyConverter.getSalaryInBaseCurrency;
 
 public class MainImpl {
+
     public static void main(String[] args) {
         List<Employee> list = new ArrayList<>();
         list.add(new Employee(101, "Deepak", new Contact("7621729576", "xyz12@gmail.com"), DepartmentType.IT, new Salary(CurrencyType.USD, 8000), EmployeeType.Fixed));
@@ -24,11 +25,6 @@ public class MainImpl {
         list.add(new Employee(161, "Gajodhar", new Contact("8552145600", "gaj65@gmail.com"), DepartmentType.FINANCE, new Salary(CurrencyType.INR, 76500), EmployeeType.PartTime));
         list.add(new Employee(151, "Birju", new Contact("8820145256", "brj52@gmail.com"), DepartmentType.IT, new Salary(CurrencyType.USD, 86000), EmployeeType.Contract));
 
-
-//        double sal = getSalaryInBaseCurrency(new Employee(101, "Deepak", new Contact("7621729576", "xyz12@gmail.com"), DepartmentType.IT, new Salary(CurrencyType.USD, 8000), EmployeeType.Fixed));
-//        System.out.println(sal);
-//       double sal2 = getSalaryInBaseCurrency(new Employee(191, "Sankata", new Contact("8556521420", "san66@gmail.com"),DepartmentType.HR, new Salary(CurrencyType.EURO, 57000), EmployeeType.Fixed));
-//       System.out.println(sal2);
 
         List<Employee> employeeListWithSalaryMoreThanTheRange = list.stream().peek(System.out::println).filter(t -> getSalaryInBaseCurrency(t) >= 5000.0).peek(System.out::println).collect(Collectors.toList());
 
