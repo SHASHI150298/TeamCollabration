@@ -18,6 +18,7 @@ public class CurrencyConverter {
     }
 
     public static double getSalaryInBaseCurrency(Employee employee) {
+// demo
 
         Double rate = currencyCurrentConversionRate.get(employee.getSalary().getCurrency());
         return rate * employee.getSalary().getAmount();
