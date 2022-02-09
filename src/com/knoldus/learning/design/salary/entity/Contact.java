@@ -6,7 +6,6 @@ public class Contact {
 	private String email;
 
 	public Contact(String mobile, String email) {
-		super();
 		this.mobile = mobile;
 		this.email = email;
 	}

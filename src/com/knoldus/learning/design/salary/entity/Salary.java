@@ -8,7 +8,6 @@ public class Salary {
 	private double amount;
 	
 	public Salary(CurrencyType currency, double amount) {
-		//super();
 		this.currency = currency;
 		this.amount = amount;
 	}

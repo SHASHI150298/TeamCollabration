@@ -14,7 +14,7 @@ public class Employee {
     private EmployeeType type;
     
 	public Employee(int id, String name, Contact contact, DepartmentType departmentType, Salary salary, EmployeeType type) {
-		super();
+
 		this.id = id;
 		this.name = name;
 		this.contact = contact;
