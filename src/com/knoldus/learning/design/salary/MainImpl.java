@@ -18,7 +18,7 @@ import static com.knoldus.learning.design.salary.util.CurrencyConverter.getSalar
 public class MainImpl {
     public static void main(String[] args) {
         List<Employee> list = new ArrayList<>();
-        list.add(new Employee(101, "Deepak", new Contact("7621729576", "xyz12@gmail.com"), DepartmentType.IT, new Salary(CurrencyType.USD, 8000), EmployeeType.Fixed));
+        list.add(new Employee(101, "Shakti", new Contact("7621729576", "xyz12@gmail.com"), DepartmentType.IT, new Salary(CurrencyType.USD, 8000), EmployeeType.Fixed));
         list.add(new Employee(111, "Prabhat", new Contact("9875699999", "abc34@gmail.com"), DepartmentType.MANAGEMENT, new Salary(CurrencyType.INR, 96000), EmployeeType.Contract));
         list.add(new Employee(121, "Krishna", new Contact("7885009312", "krish@gmail.com"), DepartmentType.HR, new Salary(CurrencyType.EURO, 7500), EmployeeType.Fixed));
         list.add(new Employee(131, "Vasudev", new Contact("8575600996", "vas12@gmail.com"), DepartmentType.FINANCE, new Salary(CurrencyType.INR, 95000), EmployeeType.PartTime));
